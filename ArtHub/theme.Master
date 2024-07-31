@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="theme.master.cs" Inherits="ArtHub.theme" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="masterpage.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+         <link rel="stylesheet" href="masterpage.css">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   <form id="form1" runat="server">
+        <header>
+            <div>
+                <nav>
+                    <div class="logo">
+                        ArtHub
+                    </div>
+                    <ul>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Log In</a></li>
+                        <li>
+                            <form>
+                                <input type="text" placeholder="search..." class="p1">
+                                <button type="submit" class="p1">Go</button>
+                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
